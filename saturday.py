@@ -38,7 +38,7 @@ category_names = {
 df = pd.read_excel("C:\\Users\\ckdrb\\OneDrive\\Desktop\\Works\\Weather\\grid.xlsx")
 
 # 행정구역과 격자 좌표 매핑
-location_to_grid = {row['2단계']: (row['격자 X'], row['격자 Y']) for idx, row in df.iterrows()}
+location_to_grid = {row['3단계']: (row['격자 X'], row['격자 Y']) for idx, row in df.iterrows()}
 
 # 사용자의 메시지를 처리하는 함수
 def handle(msg):
